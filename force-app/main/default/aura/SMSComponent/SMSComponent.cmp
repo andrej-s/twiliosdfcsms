@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" controller="SMSHandler">
+    <lightning:card title="SMS">
+        <p class="slds-p-horizontal_small">
+            <ui:inputTextArea aura:id="smsBody" rows="5" />
+            <center><lightning:button variant="brand" label="SendSMS" title="Send SMS" onclick="{!c.initiateSend}"  /><span id="successSMS" style="display:none; color:#295392;" ><b>Message sent successfully</b>!</span></center>
+        </p>
+    </lightning:card>
+    
+    
+</aura:component>
